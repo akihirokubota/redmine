@@ -7,13 +7,13 @@ Redmine::Plugin.register :polls do
   author_url 'http://example.com/about'
   
   #permission :polls, { :polls => [:index, :vote] }, :public => true
-  permission :view_polls, :polls => :index
-  permission :vote_polls, :polls => :vote
+  # permission :view_polls, :polls => :index
+  # permission :vote_polls, :polls => :vote
 
-  # project_module :polls do
-  #   permission :view_polls, :polls => :index
-  #   permission :vote_polls, :polls => :vote
-  # end
+  project_module :polls do
+    permission :view_polls, :polls => :index
+    permission :vote_polls, :polls => :vote
+  end
 
   # menu :application_menu, :polls, { :controller => 'polls', :action => 'index' }, :caption => 'Polls'
   #
