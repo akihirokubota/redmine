@@ -1,7 +1,0 @@
-= polls
-
-Redmineのプラグインのチュートリアル
-http://guide.redmine.jp/Plugin_Tutorial/
-を修正したものになります。
-
-
